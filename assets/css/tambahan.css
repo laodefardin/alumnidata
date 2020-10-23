@@ -1,0 +1,320 @@
+
+
+.box-content {
+    position: relative;
+    /* border-radius: 3px; */
+    background: #ffffff;
+    /*border-bottom: 3px solid #d2d6de;*/
+    margin-bottom: 20px;
+    width: 100%;
+    /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
+}
+
+.box-sidebar {
+    position: relative;
+    /* border-radius: 3px; */
+    background: #666;
+    /*border-bottom: 3px solid #d2d6de;*/
+    margin-bottom: 20px;
+    width: 100%;
+    color: #fff;
+    /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
+}
+
+.box-info {
+    position: relative;
+    /* border-radius: 3px; */
+    background: #444444 !important;
+    /*border-bottom: 3px solid #d2d6de;*/
+    margin-bottom: 20px;
+    width: 100%;
+    color: #fff;
+    /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
+}
+
+.box-header .box-title-info {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+}
+
+.box-header .box-title-sidebar {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+}
+
+.box-header .box-title-sidebar > span {
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: normal;
+    border-left: 5px #f29f24 solid;
+    color: #fff;
+}
+
+.box-header .box-title-info > span {
+    /*padding: 0px 10px;*/
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.box-header.with-border1 {
+    border-bottom: 2px solid #d6d6d6;
+}
+
+.box-header.with-border2 {
+    border-bottom: 0px solid #d6d6d6;
+}
+
+.box-header .box-title > span {
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: normal;
+    border-left: 5px #f29f24 solid;
+}
+
+.titletop {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 0.9em;
+    text-shadow: 1px 1px 4px #6e8cb2;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.top {
+    background: #F29F24 url(https://i.imgur.com/B6l59Ls.jpg) center no-repeat;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.img-paralax {
+    background: #F29F24 url(https://i.imgur.com/B6l59Ls.jpg) center no-repeat;
+    height: 100px;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+.paralax-title {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 0.9em;
+    text-shadow: 1px 1px 4px #6e8cb2;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: #fff;
+}
+.img-content {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.container.ua-sigle-article {
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+.ua-sigle-article {
+    background: #fff!important;    
+    z-index: 999;
+    position: relative;
+    box-shadow: 0 -20px 20px -15px rgba(0,0,0,0.1);
+}
+
+.container.ua-sigle-article > div.col-lg-9.col-md-9.col-sm-12.col-xs-12 {
+    border-left: solid 1px #f1f1f1;
+}
+
+.baris {
+    margin: 20px 0;    
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.thumb {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    line-height: 0;
+    -moz-transition: all 800ms ease-in-out;
+    -o-transition: all 800ms ease-in-out;
+    -webkit-transition: all 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.blog-post-image {
+    max-height: 358px;
+    overflow: hidden;
+    position: relative;
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
+}
+
+.blog-post-image img {
+    width: 100%;
+}
+
+.blog-post-image .blog-post-meta {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+}
+
+.blog-post-image .blog-post-meta ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.blog-post-image .blog-post-meta ul li {
+    padding: 7px 10px;
+    margin-top: 1px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.blog-post-image .blog-post-meta ul li i {
+    margin-right: 10px;
+}
+
+.blog-post-meta2 {
+    bottom: 0;
+    left: 190px;
+    position: absolute;
+    color: #FFF !important;
+}
+
+.blog-post-meta2 ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    color: #FFF !important;
+}
+
+.blog-post-meta2 ul li {
+    margin-top: 1px;
+    padding: 7px 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF !important;
+}
+
+.blog-post-image .blog-post-meta2 ul li i {
+    margin-right: 10px;
+}
+
+.blog-post-meta3 {
+    bottom: 0;
+    left: 350px;
+    position: absolute;
+    color: #FFF !important;
+}
+
+.blog-post-meta3 ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    color: #FFF !important;
+}
+
+.blog-post-meta3 ul li {
+    margin-top: 1px;
+    padding: 7px 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF !important;
+}
+
+.blog-post-image .blog-post-meta3 ul li i {
+    margin-right: 10px;
+}
+
+.blog-post-inner h3 {
+    line-height: 30px;
+    border-bottom: 1px #ccc solid !important;
+    padding-bottom: 15px;
+    color: #535353;
+}
+
+.blog-post-inner p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 2;
+    /*font-family: "Montserrat-Light";*/
+}
+
+.prof-list-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #DDD;
+}
+
+.list-event-thumb {
+    display: block;
+    float: left;
+   /* height: 120px;*/
+    width: 130px;
+    font-size: 15px;
+}
+
+.list-event-thumb img {
+    width: 120px;
+    height: 80px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.list-event-item .list-event-header {
+    margin-bottom: 15px;
+    line-height: 1px;
+}
+
+.list-event-item .list-event-header .event-place {
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.event-title {
+    margin: 0 0 5px 0;
+    color: black;
+}
+
+.event-title a {
+   /* font-family: "Montserrat-Light";*/
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #E77104;
+}
+
+@media (max-width: 767px){
+  .list-event-thumb {
+    display: none;
+  }

@@ -1,0 +1,142 @@
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);
+.title{
+	font-weight:800;
+	font-size:1.5em;
+	line-height:1.5em;
+	border-bottom:1px solid #eee;
+	margin-bottom:17px;
+	padding-bottom:5px;
+}
+.title.tarticle{
+	margin-bottom:4px;
+}
+.tcenter {
+	text-align: center!important;
+}
+.tright {
+	text-align: right!important;
+}
+.tmiddle,.tmiddle td{
+	vertical-align: middle!important;
+}
+.italic{
+	font-style:italic;	
+}
+.bold{
+	font-weight:bold;	
+}
+.title.tsidebar{
+	margin-bottom:10px;
+}
+
+.content{
+	margin-top: 45px;	
+}
+
+
+.footer{
+	background-color: #3A3A3A;
+	padding: 10px 0;
+	color:#fff;
+	text-align:center;
+}
+
+
+.header .nav{
+	/* margin-top: 10px; */
+	font-size:0.8em;	
+}
+.box{
+	margin:20px 0px;
+	background-color:#fff;
+	padding:20px;
+	/*-webkit-box-shadow:2px 4px 1px #eeeeee;-moz-box-shadow:2px 4px 1px #eeeeee;box-shadow:2px 4px 1px #eeeeee;*/
+}
+.sidebar{
+	min-height:300px;	
+}
+.main{
+	min-height:400px;	
+}
+.pager{
+	margin-top:50px;	
+	font-size:0.9em;
+}
+.pager li{
+	margin-left:30px;	
+}
+.article{
+	margin-bottom:30px;	
+}
+
+p.timepost{
+	font-size:0.9em;
+	margin-bottom:10px;
+}
+
+
+.footer{
+	color:#fff;	
+}
+.footer p{
+	text-transform:capitalize;
+	font-size:0.8em;	
+	text-shadow:1px 1px 2px #6e8cb2;
+	margin-top:40px;
+}
+.table1{
+	width:100%;	
+}
+.table1 tr td{
+	padding:5px 5px;	
+}
+.title span .btn{
+	font-weight:normal!important;
+}
+
+.or-spacer  .mask { 
+    overflow:hidden; height:20px;
+}
+.or-spacer  .mask:after { 
+      content:''; 
+      display:block; margin:-25px auto 0;
+      width:100%; height:25px;  
+      border-radius:125px / 12px;  
+      box-shadow:0 0 8px #B6B6B6;
+}
+.or-spacer   span {
+    width:50px; height:50px; 
+    position:absolute; 
+    bottom:100%; margin-bottom:-$size/2;
+    left:50%; margin-left:25px;
+    border-radius:100%;
+    box-shadow:0 2px 4px #999;
+    background:white;
+  }
+
+.span6 ol{ padding-left:40px;}
+.box.blue{background: #3A3A3A; color:#fff;}
+.front-table th, .front-table td{padding:3px 8px;} 
+/*============== RESPONSIVE ===============*/
+@media (max-width: 768px){
+	body{margin:0; padding:0}
+	.container {
+		width: 100%;
+		margin:0;
+	}
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.navbar-fixed-top{
+		margin-bottom:0px;
+	}
+	.content {
+		margin-top:0px;
+	}
+	.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+		color:#fff;
+	}
+}
+@media (max-width: 767px){
+}
