@@ -180,7 +180,7 @@ include 'global_header.php';
 
                   </div>
                   <div class="row" style="margin-bottom: 15px;">
-                    <span class="col-lg-2">Predikat Yudisiom</span>
+                    <span class="col-lg-2">Predikat Yudisium</span>
                     <div class="col-lg-4">
                       <select class="form-control" id="predikatYudisium" name="predikatYudisium" style="width: 100%;">
                         <option value="Cumlaude" <?php if($data['yudisium'] == 'Cumlaude'){echo 'selected';} ?>>Cumlaude</option>

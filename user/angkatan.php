@@ -7,7 +7,7 @@ session_start();
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SiAlumni JPTE Universitas Negeri Makassar</title>
+  <title>Portal Alumni Pascasarjana Universitas Negeri Makassar</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -46,7 +46,7 @@ th input {
   width: 100%;
 }
 </style>
-<body class="hold-transition skin-yellow sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini">
   <div class="wrapper">
     <header class="main-header">
       <!-- Logo -->
@@ -54,7 +54,7 @@ th input {
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>Si</b>A</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>SiAlumni</b> JPTE UNM</span>
+        <span class="logo-lg"><b>Portal Alumni</b> PPs UNM</span>
       </a>
       <!-- Header Navbar: style can be found in header.less -->
       <nav class="navbar navbar-static-top">
@@ -125,7 +125,7 @@ th input {
                 <li><a href="angkatan"><i class="fa fa-group"></i> List Data Alumni</a></li>
                 <li><a href="lowongan-kerja-manage"><i class="fa fa-circle-o"></i> Lowongan Kerja</a></li>
                 <li><a href="pesan-kesan-alumni"><i class="fa fa-send-o"></i> Pesan Dan Kesan</a></li>
-                 <li><a href="manage-dosen-jpte"><i class="fa fa-circle-o"></i> <span>Dosen JPTE</span></a></li>
+                 <!-- <li><a href="manage-dosen-jpte"><i class="fa fa-circle-o"></i> <span>Dosen JPTE</span></a></li> -->
               </ul>
             </li>
             <li class="active treeview">
@@ -153,7 +153,7 @@ th input {
   <section class="content-header">
     <h1>
       Daftar Alumni
-      <small>Fakultas Teknik Jurusan Pendidikan Teknik Elektro</small>
+      <small>Pascasarjana Universitas Negeri Makassar</small>
     </h1>
   </section>
 
@@ -172,10 +172,10 @@ th input {
     //mengatur session pesan menjadi kosong
     $_SESSION['pesan'] = '';
     ?>
-    <div class="box box-warning">
+    <div class="box box-primary">
     <div class="box-body table-responsive">
       <table id="example" class="table table-striped table-bordered" style="width:100%">
-       <thead class="bg-yellow">
+       <thead class="bg-blue">
         <tr>
          <th>No</th>
          <th>Nama Lengkap</th>
@@ -226,9 +226,9 @@ th input {
 
 <footer class="main-footer">
   <div class="pull-right hidden-xs">
-    <b>Design By</b> Laode Muh. ZulFardinsyah
+    <b>Design By</b> LF
   </div>
-  <strong>Copyright &copy; 2018 <a href=""> SiALUMNI JPTE </a> Universitas Negeri Makassar. </strong>
+  <strong>Copyright &copy; 2021 <a href=""> Portal Alumni Pascasarjana </a> Universitas Negeri Makassar. </strong>
 </footer>
 
 <!-- /.control-sidebar -->

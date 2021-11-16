@@ -4,6 +4,7 @@ include 'global_header.php';
 ?>
 
 <div class="content-wrapper" style="min-height: 901px;">
+<div class="container no-padding">
 	<div class="img-paralax hidden-xs">
 		<div class="container">
 			<div class="paralax-title">
@@ -11,7 +12,7 @@ include 'global_header.php';
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	
 		<!-- Content Header (Page header) -->
 		<section class="content-header">
 		</section>
@@ -19,7 +20,7 @@ include 'global_header.php';
 		<section class="content">
 			<div class="box box-warning">
 				<div class="box-header">
-					<div class="box-title"><h2>Pesan Dan Kesan Alumni Fakultas Teknik Jurusan Pendidikan Teknik Elektro</h2></div>
+					<div class="box-title"><h4><b>Pesan Dan Kesan Alumni Pascasarjana Universitas Negeri Makassar</b></h4></div>
 				</div>
 				<div class="box-body table-responsive">
 					<table id="example1" class="table table-bordered">

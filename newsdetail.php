@@ -7,6 +7,7 @@ $sql = $koneksi->query("SELECT * FROM data_artikel LEFT OUTER JOIN data_kategori
 while($data = mysqli_fetch_array($sql)){
   ?>
   <div class="content-wrapper">
+    <div class="container ua-sigle-article no-padding">
     <div class="top">
       <div class="container">
         <h2 class="titletop">
@@ -15,14 +16,14 @@ while($data = mysqli_fetch_array($sql)){
         </h2>
       </div>
     </div>
-    <div class="container ua-sigle-article no-padding">
+    <!-- <div class="container ua-sigle-article no-padding"> -->
       <!-- Content Header (Page header) -->
     </section>
     <!-- Main content -->
     <section class="content">
       <div class="row"> <!-- awal baris row -->
-        <div class="col-md-1"></div>
-        <div class="col-md-8 articles" id="site-content"> <!-- awal baris colom -->
+        <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-9 articles" id="site-content"> <!-- awal baris colom -->
           <ol class="breadcrumb">
             <li><a href="index">Home</a></li>
             <li><a href="berita">Berita</a></li>

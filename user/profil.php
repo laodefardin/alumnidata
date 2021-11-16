@@ -43,7 +43,7 @@ include 'global_header.php';
                   <div class="col-sm-2 col-md-2 col-lg-2 " align="center" style="margin-bottom: 25px"> 
                    <?php
                    $foto = $data["foto"];
-                   if($foto===''){?>
+                   if($foto== NULL){?>
                      <img style="width: 100%;"  src="../foto/alumni/anonim.jpg"> </div>              
                    <?php } else {?>
                     <img style="width: 100%;"  src="../foto/alumni/<?php echo $data['foto']; ?>"> </div>
@@ -61,10 +61,6 @@ include 'global_header.php';
                         <td style="white-space: normal;"><strong>Nim</strong></td>
                         <td><?php echo $data['nim']; ?></td> 
                       </tr>
-                      <tr>
-                       <td style="white-space: normal;"><strong>Jurusan</strong></td>
-                       <td style="white-space: normal;">Pendidikan Teknik Elektro</td> 
-                     </tr>
                      <tr>
                        <td style="white-space: normal;"><strong>Program Studi</strong></td>
                        <td style="white-space: normal;"><?php echo $data['program_studi']; ?></td>
@@ -82,7 +78,7 @@ include 'global_header.php';
                        <td style="white-space: normal;"><?php echo $data['ipk']; ?></td>
                      </tr>
                      <tr>
-                       <td style="white-space: normal;"><strong>Judul Skripsi</strong></td>
+                       <td style="white-space: normal;"><strong>Judul Tugas Akhir</strong></td>
                        <td style="white-space: normal;"><?php echo $data['judul_skripsi']; ?></td>
                      </tr>
                    </tbody></table>

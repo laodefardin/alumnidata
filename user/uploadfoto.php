@@ -60,7 +60,7 @@ include 'global_header.php';
               ?>
               <?php 
               $foto = $data["foto"];
-              if($foto===''){?>
+              if($foto==NULL){?>
               <img src="../foto/alumni/anonim.jpg" class="profile-user-img img-square" style="width:200px">
               <?php } else {?>
               <img src="../foto/alumni/<?php echo $data['foto'];?>" class="profile-user-img img-square" style="width:200px">

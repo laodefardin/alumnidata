@@ -7,7 +7,7 @@ include 'inc/koneksi.php';
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SiAlumni JPTE Universitas Negeri Makassar</title>
+	<title>Portal Alumni Pascasarjana Universitas Negeri Makassar</title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<!-- Bootstrap 3.3.6 -->
@@ -92,11 +92,12 @@ th input {
 
 <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
 <body class="hold-transition skin-yellow layout-top-nav">
-	<div class="wrapper">
+  <div class="wrapper" style="background-color: #fff;">
 
+  <div class="container no-padding"> 
 		<header class="main-header">
-			<nav class="navbar navbar-static-top" style="background-color: #444;">
-				<div class="container">
+			<nav class="navbar navbar-static-top" style="background-color: #294a70;">
+				
 					<div class="navbar-header">
 						<a href="index" class="navbar-brand">
 							<img src="assets/logo1.png" style="
@@ -111,25 +112,25 @@ th input {
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+						<div class="collapse navbar-collapse pull-right" id="navbar-collapse">
 							<ul class="nav navbar-nav">
+							<li><a href="login">Login</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Alumni <span class="caret"></span></a>
 									<ul class="dropdown-menu" role="menu">
 										<li><a href="alumni">Database Alumni</a></li>
-										<li><a href="panduan-pendaftaran">Panduan</a></li>
+										
 										<li><a href="registrasi-alumni">Pendaftaran Alumni</a></li>
-										<li class="divider"></li>
 										<li><a href="pesan-kesan-alumni">Pesan Dan Kesan Alumni</a></li>
 									</ul>
 								</li>
 
-								<li><a href="login">Login</a></li>
+								
 								<li><a href="berita">Berita</a></li>
 								<li><a href="lowongan-kerja">Lowongan Kerja</a></li>
-								<li><a href="galeri-alumni">Galeri</a></li>
-								<li><a href="kontak-dan-saran">Kontak & Saran</a></li>
-								<li><a href="tentang-jpte">Tentang JPTE UNM</a></li>
+								<li><a href="kontak">Kontak</a></li>
+								<li><a href="tentang-jpte">Tentang PPs UNM</a></li>
+								<li><a href="panduan-pendaftaran">Bantuan</a></li>
 
 
 							</ul>
@@ -141,6 +142,7 @@ th input {
 			<!-- Full Width Column -->
 
 			<div class="content-wrapper" style="min-height: 901px;">
+			<div class="container no-padding">
 				<div class="img-paralax hidden-xs">
 					<div class="container">
 						<div class="paralax-title">
@@ -148,7 +150,7 @@ th input {
 						</div>
 					</div>
 				</div>
-				<div class="container">
+				
 					<!-- Content Header (Page header) -->
 					<section class="content-header">
 					</section>
@@ -156,7 +158,7 @@ th input {
 					<section class="content">
 						<div class="box box-warning">
 							<div class="box-header">
-								<div class="box-title"><h4>Daftar Alumni Fakultas Teknik Jurusan Pendidikan Teknik Elektro Yang Sudah Registrasi</h4></div>
+								<div class="box-title"><h4><b>Daftar Alumni Pascasarjana Universitas Negeri Makassar Yang Sudah Registrasi</h4></b></div>
 							</div>
 							<div class="box-body table-responsive">
 								<table id="example" class="table table-striped table-bordered" style="width:100%">
@@ -224,10 +226,9 @@ th input {
 
 		<footer class="main-footer">
 			<div class="container">
-				<div class="pull-right hidden-xs">
-					<b>Design By</b> Laode Muh. ZulFardinsyah
-				</div>
-				<strong>Copyright &copy; 2018 <a href=""> SiALUMNI JPTE </a> Universitas Negeri Makassar. </strong>
+			<center>
+				<strong>Copyright &copy; 2021 <a href=""> Portal Alumni Pascasarjana</a> Universitas Negeri Makassar. </strong>
+				</center>
 			</footer>
 		</div>
 		<!-- ./wrapper -->

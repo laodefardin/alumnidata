@@ -7,7 +7,7 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SiAlumni JPTE Universitas Negeri Makassar</title>
+	<title>Portal Alumni PPs Universitas Negeri Makassar</title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<!-- Bootstrap 3.3.6 -->
@@ -38,7 +38,7 @@ session_start();
 /* Ensure that the demo table scrolls */
 th, td { white-space: nowrap; }
 div.dataTables_wrapper {
-	width: 1070px;
+	/* width: 1070px; */
 	margin: 0 auto;
 }
 
@@ -46,7 +46,7 @@ th input {
 	width: 100%;
 }
 </style>
-<body class="hold-transition skin-yellow sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
 		<header class="main-header">
 			<!-- Logo -->
@@ -54,7 +54,7 @@ th input {
 				<!-- mini logo for sidebar mini 50x50 pixels -->
 				<span class="logo-mini"><b>Si</b>A</span>
 				<!-- logo for regular state and mobile devices -->
-				<span class="logo-lg"><b>SiAlumni</b> JPTE UNM</span>
+				<span class="logo-lg"><b>Portal Alumni</b> PPs UNM</span>
 			</a>
 			<!-- Header Navbar: style can be found in header.less -->
 			<nav class="navbar navbar-static-top">
@@ -121,10 +121,12 @@ th input {
           </span>
         </a>
         <ul class="treeview-menu">
-         <li><a href="manage-tentang-jpte"><i class="fa fa-circle-o"></i> <span>Tentang JPTE</span></a></li>
-         <li><a href="manage-dosen-jpte"><i class="fa fa-circle-o"></i> <span>Dosen JPTE</span></a></li>
-         <li><a href="galerymanage"><i class="fa fa-circle-o"></i> Manage Galery</a></li>
+         <!-- <li><a href="manage-tentang-pps"><i class="fa fa-circle-o"></i> <span>Tentang PPs</span></a></li>
+         <li><a href="manage-dosen-pps"><i class="fa fa-circle-o"></i> <span>Dosen PPs</span></a></li>
+         <li><a href="galerymanage"><i class="fa fa-circle-o"></i> Manage Galery</a></li> -->
          <li><a href="slidemanage"><i class="fa fa-circle-o"></i> Manage Slide</a></li>
+         <li><a href="artikelmanage"><i class="fa fa-pencil-square-o"></i> Artikel</a></li>
+         <li><a href="ubah-password"><i class="fa fa-circle-o"></i> Ubah Password</a></li>
        </ul>
      </li>
 
@@ -146,20 +148,7 @@ th input {
    </ul>
  </li>
 
- <li><a href="artikelmanage"><i class="fa fa-pencil-square-o"></i> Artikel</a></li>
 
- <li class="active treeview">
-  <a href="#">
-   <i class="menu-icon fa fa-wrench"></i>
-   <span>Pengaturan </span>
-   <span class="pull-right-container">
-    <i class="fa fa-angle-left pull-right"></i>
-  </span>
-</a>
-<ul class="treeview-menu">
-
- <li><a href="ubah-password"><i class="fa fa-circle-o"></i> Ubah Password</a></li>
-</ul>
 </li>
 
 
@@ -172,7 +161,7 @@ th input {
 	<section class="content-header">
 		<h1>
 			Daftar Alumni 
-      <small>Fakultas Teknik Jurusan Pendidikan Teknik Elektro </small>
+      <small>Pascasarjana Universitas Negeri Makassar </small>
     </h1>
   </section>
 
@@ -193,7 +182,7 @@ th input {
     ?>
     <div class="box box-warning">
      <div class="box-header">
-      <div class="box-title"><h4>Alumni Fakultas Teknik Jurusan Pendidikan Teknik Elektro</h4></div>
+      <div class="box-title"><h4>Alumni Pascasarjana Universitas Negeri Makassar</h4></div>
       <a style="text-align: right;" class="btn bg-green btn-sm pull-right" href="tambahalumni"> <i class="fa fa-plus"></i>  Tambah Alumni</a>
     </div>
     <div class="box-body table-responsive">
@@ -216,6 +205,11 @@ th input {
 
      <tbody>
       <?php
+
+      //  $result = mysqli_query($koneksi, "SELECT alumni_profil.*, user.active, user.level FROM alumni_profil LEFT OUTER JOIN user ON alumni_profil.id_user = user.id_user WHERE level = 'user'  ORDER BY update_status DESC");
+
+      // $result = mysqli_query($koneksi, "SELECT alumni_profil.nama_lengkap, alumni_profil.nim, alumni_profil.jk, alumni_profil.program_studi, alumni_profil.ipk, alumni_profil.th_masuk, alumni_profil.th_keluar, user.active FROM user INNER JOIN alumni_profil ON alumni_profil.id_user = user.id_user");
+      
       $result = $koneksi->query("SELECT * FROM alumni_profil LEFT OUTER JOIN user ON user.id_user = alumni_profil.id_user WHERE level = 'user'  ORDER BY update_status DESC");
       $no=0; foreach ($result as $data): $no++         
       ?>
@@ -271,9 +265,9 @@ th input {
 
 <footer class="main-footer">
 	<div class="pull-right hidden-xs">
-		<b>Design By</b> Laode Muh. ZulFardinsyah
+		<!-- <b>Design By</b> L.F -->
 	</div>
-	<strong>Copyright &copy; 2018 <a href=""> SiALUMNI JPTE </a> Universitas Negeri Makassar. </strong>
+	<strong><center>Copyright &copy; 2021 <a href=""> Portal Alumni Pascasarjana </a> Universitas Negeri Makassar. </center></strong>
 </footer>
 
 <!-- /.control-sidebar -->

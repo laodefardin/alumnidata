@@ -35,6 +35,7 @@ include 'global_header.php';
        <th width="15%">Pesan</th>
        <th width="15%">Kesan</th>
        <th width="15%">Tanggal</th>
+       <th width="15%">Aksi</th>
        
      </thead>
      <?php
@@ -54,6 +55,8 @@ include 'global_header.php';
         }else{
           echo time_ago($data['tanggal']);
         } ;?>
+      </td>
+      <td><a href="hapus-pesankesan.php?id=<?php echo $data['id_pesankesan'];?>" onclick="return confirm('Apakah Anda Ingin Menghapus Data Ini');" class="btn btn-danger btn-sm"">Hapus</a>
       </td>
 
     </tr>

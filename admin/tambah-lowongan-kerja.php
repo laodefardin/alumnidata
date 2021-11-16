@@ -72,7 +72,7 @@ if (isset($_POST['submit'])){
   // $kategori = $_POST['kategori'];
   $isi = $_POST['isi'];
 
-  $query = "INSERT INTO data_loker VALUES('','$judul','$isi','$nama','$currentDate','$tgl')";
+  echo $query = "INSERT INTO data_loker (judul, isi, pengirim, tanggal, tgl) VALUES('$judul','$isi','$nama','$currentDate','$tgl')";
   $proses = $koneksi->query($query) or die (mysqli_error());
 
   $_SESSION['pesan'] = 'Data Berhasil Ditambah';

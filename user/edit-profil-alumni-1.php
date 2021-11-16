@@ -75,16 +75,18 @@ include 'global_header.php';
               <span class="col-lg-2">Rentang Selesai Hingga Bekerja</span>
               <div class="col-lg-4">
                 <select class="form-control" name="rentangjarak" id="rentangJarak">
-                  <option value=""> - Pilih Rentang Dulu - </option>
-                  <option value="Kurang Dari 1 Bulan" <?php if($data['rentangJarak'] == 'Kurang Dari 1 Bulan'){echo 'selected';} ?>>Kurang Dari 1 Bulan</option>
-                  <option value="1 Bulan Sampai 12 Bulan" <?php if($data['rentangJarak'] == '1 Bulan Sampai 12 Bulan'){echo 'selected';} ?>>1 Bulan Sampai 12 Bulan</option>
-                  <option value="Lebih Dari 12 Bulan" <?php if($data['rentangJarak'] == 'Lebih Dari 12 Bulan'){echo 'selected';} ?>>Lebih Dari 12 Bulan</option>
+                  <option value=""> - Pilih Lama Bekerja Dulu - </option>
+                  <option value="< 1 Bulan" <?php if($data['lama_bekerja'] == '< 1 Bulan'){echo 'selected';} ?>> < 1 Bulan </option>
+                  <option value="1 Bulan - 5 Bulan" <?php if($data['lama_bekerja'] == '1 Bulan - 5 Bulan'){echo 'selected';} ?>>1 Bulan - 5 Bulan</option>
+                  <option value="5 Bulan - 10 Bulan" <?php if($data['lama_bekerja'] == '5 Bulan - 10 Bulan'){echo 'selected';} ?>>5 Bulan - 10 Bulan</option>
+                  <option value="> 1 Tahun" <?php if($data['lama_bekerja'] == '> 1 Tahun'){echo 'selected';} ?>> > 1 Tahun</option>
+                  <option value="Lainnya" <?php if($data['lama_bekerja'] == 'Lainnya'){echo 'selected';} ?>>Lainnya</option>
                 </select>
               </div>
-              <span class="col-lg-2">Kesesuain Bidang Pekerjaan dengan Jurusan Di Kampus</span>
+              <span class="col-lg-2">Kesesuaian Bidang Pekerjaan dengan Jurusan Di Kampus</span>
               <div class="col-lg-4">
                 <select class="form-control" name="kesesuaian" id="Kesesuaian">
-                  <option value=""> - Pilih Kesesuai Dulu - </option>
+                  <option value=""> - Pilih Kesesuaian Dulu - </option>
                   <option value="Sangat Sesuai" <?php if($data['kesesuaian'] == 'Sangat Sesuai'){echo 'selected';} ?>>Sangat Sesuai</option>
                   <option value="Sesuai" <?php if($data['kesesuaian'] == 'Sesuai'){echo 'selected';} ?>>Sesuai</option>
                   <option value="Kurang Sesuai" <?php if($data['kesesuaian'] == 'Kurang Sesuai'){echo 'selected';} ?>>Kurang Sesuai</option>
@@ -107,20 +109,23 @@ include 'global_header.php';
             <div class="col-lg-4">
               <select class="form-control" id="rata2Gaji" name='rata2gaji'>
                 <option value=""> - Pilih Rata-Rata Dulu - </option>
-                <option value="> 50 Juta" <?php if($data['gaji'] == '> 50 Juta'){echo 'selected';} ?> >&gt; 50 Juta</option>
-                <option value="25 Juta - 50 Juta" <?php if($data['gaji'] == '25 Juta - 50 Juta'){echo 'selected';} ?>>25 Juta - 50 Juta</option>
-                <option value="18 Juta - 25 Juta" <?php if($data['gaji'] == '18 Juta - 25 Juta'){echo 'selected';} ?>>18 Juta - 25 Juta</option>
-                <option value="<18 Juta" <?php if($data['gaji'] == '<18 Juta'){echo 'selected';} ?>>&lt;18 Juta</option>
-                  <option value="Lainnya" <?php if($data['gaji'] == 'Lainnya'){echo 'selected';} ?>>Lainnya</option>
+								<option value="< Rp. 1.000.000 "  <?php if($data['gaji'] == '< Rp. 1.000.000'){echo 'selected';} ?> >< Rp. 1.000.000 </option>
+								<option value="Rp. 1.000.000 - Rp. 5.000.000" <?php if($data['gaji'] == 'Rp. 1.000.000 - Rp. 5.000.000'){echo 'selected';} ?> >Rp. 1.000.000 - Rp. 5.000.000</option>
+								<option value="Rp. 5.000.000 - Rp. 10.000.000" <?php if($data['gaji'] == 'Rp. 5.000.000 - Rp. 10.000.000'){echo 'selected';} ?>>Rp. 5.000.000 - Rp. 10.000.000</option>
+								<option value="Rp. 10.000.000 - Rp. 15.000.000" <?php if($data['gaji'] == 'Rp. 10.000.000 - Rp. 15.000.000'){echo 'selected';} ?>> Rp. 10.000.000 - Rp. 15.000.000</option>
+								<option value="Rp. 15.000.000 - Rp. 20.000.000" <?php if($data['gaji'] == 'Rp. 15.000.000 - Rp. 20.000.000'){echo 'selected';} ?> >Rp. 15.000.000 - Rp. 20.000.000</option>
+								<option value="> Rp. 20.000.000" <?php if($data['gaji'] == '> Rp. 20.000.000'){echo 'selected';} ?>> > Rp. 20.000.000</option>
                 </select>
               </div>
               <span class="col-lg-2">Lama Bekerja di Perusahaan Sekarang</span>
               <div class="col-lg-4">
                 <select class="form-control" id="lamaBekerja" name='lamabekerja'>
                   <option value=""> - Pilih Lama Bekerja Dulu - </option>
-                  <option value="Kurang Dari 1 Tahun" <?php if($data['lama_bekerja'] == 'Kurang Dari 1 Tahun'){echo 'selected';} ?>>Kurang Dari 1 Tahun</option>
-                  <option value="1 Tahun Sampai 3 Tahun" <?php if($data['lama_bekerja'] == '1 Tahun Sampai 3 Tahun'){echo 'selected';} ?>>1 Tahun Sampai 3 Bulan</option>
-                  <option value="Lebih Dari 3 Tahun" <?php if($data['lama_bekerja'] == 'Lebih Dari 3 Tahun'){echo 'selected';} ?>>Lebih Dari 3 Tahun</option>
+                  <option value="< 1 Bulan" <?php if($data['lama_bekerja'] == '< 1 Bulan'){echo 'selected';} ?>> < 1 Bulan </option>
+                  <option value="1 Bulan - 5 Bulan" <?php if($data['lama_bekerja'] == '1 Bulan - 5 Bulan'){echo 'selected';} ?>>1 Bulan - 5 Bulan</option>
+                  <option value="5 Bulan - 10 Bulan" <?php if($data['lama_bekerja'] == '5 Bulan - 10 Bulan'){echo 'selected';} ?>>5 Bulan - 10 Bulan</option>
+                  <option value="> 1 Tahun" <?php if($data['lama_bekerja'] == '> 1 Tahun'){echo 'selected';} ?>> > 1 Tahun</option>
+                  <option value="Lainnya" <?php if($data['lama_bekerja'] == 'Lainnya'){echo 'selected';} ?>>Lainnya</option>
                 </select>
               </div>
             </div>

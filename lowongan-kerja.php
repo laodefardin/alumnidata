@@ -4,6 +4,15 @@ include 'inc/koneksi.php';
 ?>
 
 <div class="content-wrapper">
+  <div class="container ua-sigle-article no-padding">
+<div class="img-paralax">
+		<div class="container">
+			<div class="paralax-title">
+				Lowongan Kerja
+			</div>
+		</div>
+	</div>
+<!--   
   <div class="top">
     <div class="container">
       <h2 class="titletop">
@@ -11,20 +20,20 @@ include 'inc/koneksi.php';
         <span></span>
       </h2>
     </div>
-  </div>
-  <div class="container ua-sigle-article no-padding">
+  </div> -->
+  
 
     <!-- Content Header (Page header) -->
   </section>
   <!-- Main content -->
   <section class="content">
     <div class="row"> <!-- awal baris row -->
-      <div class="col-md-1"></div>
-      <div class="col-md-8 articles" id="site-content"> <!-- awal baris colom -->
+      <!-- <div class="col-md-1"></div> -->
+      <div class="col-md-9 articles" id="site-content"> <!-- awal baris colom -->
         <div class="box-content">
           <div class="box-header with-border1">
            <h3 class="box-title">
-            <span>Lowongan Kerja</span></h3>
+            <span><b>Lowongan Kerja</b></span></h3>
           </div>
           <div class="box-body">
             <?php

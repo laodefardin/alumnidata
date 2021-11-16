@@ -6,7 +6,7 @@ include 'global_header.php';
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
-   <div style="padding: 20px 30px; background: rgb(243, 156, 18); z-index: 999999; font-size: 16px; font-weight: 600;"><a href="#" style="color: rgba(255, 255, 255, 0.9); display: inline-block; margin-right: 10px; text-decoration: none;">Selamat Datang <?=$_SESSION['nm_lengkap']?> Di Sistem Informasi Alumni JPTE FT UNM</a></div>
+   <div style="padding: 20px 30px; background: rgb(60 141 188); z-index: 999999; font-size: 16px; font-weight: 600;"><a href="#" style="color: rgba(255, 255, 255, 0.9); display: inline-block; margin-right: 10px; text-decoration: none;">Selamat Datang <?=$_SESSION['nm_lengkap']?> Di Sistem Informasi Alumni Pascasarjana Universitas Negeri Makassar</a></div>
   </section>
 
 
@@ -73,16 +73,14 @@ include 'global_header.php';
 
         <div class="info-box-content">
           <?php
-          $result = $koneksi->query("SELECT * FROM data_dosen");
+          $result = $koneksi->query("SELECT * FROM data_artikel");
           $data = mysqli_num_rows($result);
           ?>
-          <span class="info-box-text">Jumlah Dosen JPTE</span>
+          <span class="info-box-text">Jumlah Berita</span>
           <span class="info-box-number"><?php echo $data; ?></span>
-          <h6>Jumlah Dosen JPTE</h6>
+          <h6>Jumlah Berita</h6>
         </div>
-        <!-- /.info-box-content -->
       </div>
-      <!-- /.info-box -->
     </div>
     <!-- /.col -->
   </div>

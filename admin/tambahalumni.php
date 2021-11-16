@@ -7,7 +7,7 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SiAlumni JPTE Universitas Negeri Makassar</title>
+	<title>Portal Alumni Pascasarjana Universitas Negeri Makassar</title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<!-- Bootstrap 3.3.6 -->
@@ -45,7 +45,7 @@ th input {
 	width: 100%;
 }
 </style>
-<body class="hold-transition skin-yellow sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
 		<header class="main-header">
 			<!-- Logo -->
@@ -53,7 +53,7 @@ th input {
 				<!-- mini logo for sidebar mini 50x50 pixels -->
 				<span class="logo-mini"><b>Si</b>A</span>
 				<!-- logo for regular state and mobile devices -->
-				<span class="logo-lg"><b>SiAlumni</b> JPTE UNM</span>
+				<span class="logo-lg"><b>Portal Alumni</b> PPs</span>
 			</a>
 			<!-- Header Navbar: style can be found in header.less -->
 			<nav class="navbar navbar-static-top">
@@ -120,9 +120,9 @@ th input {
           </span>
         </a>
         <ul class="treeview-menu">
-         <li><a href="manage-tentang-jpte"><i class="fa fa-circle-o"></i> <span>Tentang JPTE</span></a></li>
+         <!-- <li><a href="manage-tentang-jpte"><i class="fa fa-circle-o"></i> <span>Tentang JPTE</span></a></li>
          <li><a href="manage-dosen-jpte"><i class="fa fa-circle-o"></i> <span>Dosen JPTE</span></a></li>
-         <li><a href="galerymanage"><i class="fa fa-circle-o"></i> Manage Galery</a></li>
+         <li><a href="galerymanage"><i class="fa fa-circle-o"></i> Manage Galery</a></li> -->
          <li><a href="slidemanage"><i class="fa fa-circle-o"></i> Manage Slide</a></li>
        </ul>
      </li>
@@ -210,7 +210,7 @@ th input {
 						<tr>
 							<td><b>Nim Mahasiswa</b></td>
 							<td>
-								<input type="text" maxlength="10" class="form-control" placeholder="Masukkan Nomor Induk Mahasiswa" name="nim" onkeypress="return hanyaAngka(event)">
+								<input type="text" maxlength="12" class="form-control" placeholder="Masukkan Nomor Induk Mahasiswa" name="nim" onkeypress="return hanyaAngka(event)">
 							</td>
 						</tr>
 						<script>
@@ -236,9 +236,36 @@ th input {
 							<td>
 								<select class="form-control select2" name="program_studi" style="width: 100%;">
 									<option selected="selected" disabled="disabled"> Pilih Program Studi</option>
-									<option value="Pendidikan Teknik Elektro (S1)">Pendidikan Teknik Elektro (S1)</option>
-									<option value="Teknik Elektro (D3)">Teknik Elektro (D3)</option>
-									<option value="Pendidikan Teknik Informatika Dan Komputer (S1)">Pendidikan Teknik Informatika Dan Komputer (S1)</option>
+									<option value="Pendidikan Matematika (S2)">Pendidikan Matematika (S2)</option>
+									<option value="Pendidikan Ekonomi (S3)">Pendidikan Ekonomi (S3)</option>
+									<option value="PKLH (S3)">PKLH (S3)</option>
+									<option value="Ilmu Sosiologi (S3)">Ilmu Sosiologi (S3)</option>
+									<option value="Ilmu Administrasi Publik (S3)">Ilmu Administrasi Publik (S3)</option>
+									<option value="PKLH (S2)">PKLH (S2)</option>
+									<option value="Pendidikan Ilmu Pengetahuan Sosial (S2)">Pendidikan Ilmu Pengetahuan Sosial (S2)</option>
+									<option value="Pendidikan Bahasa (S2)">Pendidikan Bahasa (S2)</option>
+									<option value="Ilmu Pendidikan (S3)">Ilmu Pendidikan (S3)</option>
+									<option value="Ilmu Pendidikan Bahasa (S3)">Ilmu Pendidikan Bahasa (S3)</option>
+									<option value="Pendidikan Kimia (S2)">Pendidkan Kimia (S2)</option>
+									<option value="Pendidikan Biologi (S2)">Pendidikan Biologi (S2)</option>
+									<option value="Bimbingan dan Konseling (S2)">Bimbingan dan Konseling (S2)</option>
+									<option value="Pendidikan Seni Rupa (S2)">Pendidikan Seni Rupa (S2)</option>
+									<option value="Pendidikan Bahasa Inggris (S3)">Pendidikan Bahasa Inggris (S3)</option>
+									<option value="Pendidikan Fisika (S2)">Pendidikan Fisika (S2)</option>
+									<option value="Pendidikan Jasmani Dan Olahraga (S2)">Pendidikan Jasmani Dan Olahraga (S2)</option>
+									<option value="Penelitian Dan Evaluasi Pendidikan (S2)">Penelitian Dan Evaluasi Pendidikan (S2)</option>
+									<option value="Pendidikan Teknologi dan Kejuruan (S2)">Pendidikan Teknologi dan Kejuruan (S2)</option>
+									<option value="Pendidikan Bahasa Jerman (S2)">Pendidikan Bahasa Jerman (S2)</option>
+									<option value="Ilmu Administrasi Publik (S2)">Ilmu Administrasi Publik (S2)</option>
+									<option value="Administrasi Pendidikan (S2)">Administrasi Pendidikan (S2)</option>
+									<option value="Pendidikan Geografi (S2)">Pendidikan Geografi (S2)</option>
+									<option value="Teknologi Pendidikan (S2)">Teknologi Pendidikan (S2)</option>
+									<option value="Pendidikan Bahasa Inggris (S2)">Pendidikan Bahasa Inggris (S2)</option>
+									<option value="Matematika (S2)">Matematika (S2)</option>
+									<option value="Fisika (S2)">Fisika (S2)</option>
+									<option value="Pendidikan Matematika (S3)">Pendidikan Matematika (S3)</option>
+									<option value="Pendidikan Vokasi Keteknikan (S3)">Pendidikan Vokasi Keteknikan (S3)</option>
+									<option value="Administrasi Pendidikan (S3)">Administrasi Pendidikan (S3)</option>
 								</select>
 							</td>
 						</tr>

@@ -102,13 +102,13 @@ if (isset($_POST['submit'])){
     $path = "upload/".$nama_baru;
 
     if(move_uploaded_file($tmp, $path)){
-    $query = "INSERT INTO data_artikel VALUES('','$kategori','$judul','$isi','$nama.','$currentDate','$date','$nama_baru')";
+    $query = "INSERT INTO data_artikel (id_kategori, judul, isi, pengirim, tanggal, date, foto) VALUES ('$kategori','$judul','$isi','$nama','$currentDate','$date','$nama_baru')";
       $proses = $koneksi->query($query) or die (mysqli_error());
       $_SESSION['pesan'] = 'Data Berhasil di Ditambah';    
       echo "<script>window.location='artikelmanage';</script>";
     }  
   } else {
-    $query = "INSERT INTO data_artikel VALUES('','$kategori','$judul','$isi','$nama','$currentDate','$date','')";
+    $query = "INSERT INTO data_artikel (id_kategori, judul, isi, pengirim, tanggal, date, foto) VALUES ('$kategori','$judul','$isi','$nama','$currentDate','$date','')";
     $proses = $koneksi->query($query) or die (mysqli_error());
     $_SESSION['pesan'] = 'Data Berhasil di Ditambah';
     echo "<script>window.location='artikelmanage';</script>";

@@ -4,7 +4,7 @@
     <div class="pull-right hidden-xs">
       <!-- <b>Design By</b> Laode Muh. ZulFardinsyah -->
     </div>
-    <strong>Copyright &copy; 2018 <a href=""> SiALUMNI JPTE </a> Universitas Negeri Makassar. </strong>
+    <center><strong>Copyright &copy; 2021 <a href=""> Portal Alumni Pascasarjana </a> Universitas Negeri Makassar. </strong></center>
   </footer>
 </div>
 <!-- ./wrapper -->

@@ -17,7 +17,7 @@ include 'inc/koneksi.php';
       <div class="col-sm-3 col-md-3 col-lg-3 " align="center" style="margin-bottom: 25px"> 
         <?php
         $foto = $data["foto"];
-        if($foto===''){?>
+        if($foto==NULL){?>
           <img style="width: 100%;"  src="foto/alumni/anonim.jpg"> </div>
         <?php } else {?>
           <img style="width: 100%;"  src="foto/alumni/<?php echo $data['foto']; ?>">  </div>
@@ -35,10 +35,10 @@ include 'inc/koneksi.php';
                 <td><strong>Nim</strong></td>
                 <td><?php echo $data['nim']; ?></td> 
               </tr>
-              <tr>
+              <!-- <tr>
                <td><strong>Jurusan</strong></td>
                 <td style="white-space: normal;">Pendidikan Teknik Elektro</td> 
-              </tr>
+              </tr> -->
               <tr>
                <td><strong>Program Studi</strong></td>
                <td style="white-space: normal;"><?php echo $data['program_studi']; ?></td>
@@ -56,7 +56,7 @@ include 'inc/koneksi.php';
                <td style="white-space: normal;"><?php echo $data['ipk']; ?></td>
              </tr>
              <tr>
-               <td><strong>Judul Skripsi</strong></td>
+               <td><strong>Tugas Akhir</strong></td>
                <td style="white-space: normal;"><?php echo $data['judul_skripsi']; ?></td>
              </tr>
            </tbody></table>

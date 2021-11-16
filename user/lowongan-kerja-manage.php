@@ -51,18 +51,19 @@ include 'global_header.php';
         <td><?php echo $no;?></td>
         <td><?php echo $data['judul']; ?></td>
         <td><?php echo $data['pengirim']; ?></td>
-        <td><?php echo $data['tgl']; ?>
+        <td> 
+        <!-- <?php echo $data['tgl']; ?> -->
         <?php
         $tanggal = $data["tanggal"];
         if($tanggal==='0000-00-00 00:00:00'){
           echo "Belum Login";
         }else{
-          echo time_ago($data['tanggal']);
+          echo $data['tanggal'];
         } ;?>
       </td>
-      <td><a href="hapus-loker.php?id=<?php echo $data['id_loker'];?>" onclick="return confirm('Apakah Anda Ingin Menghapus Data Ini');" class="btn btn-danger btn-sm"">Hapus</a>
-        <a href="edit-lowongan-kerja.php?id=<?php echo $data['id_loker'];?>" class="btn btn-primary btn-sm"">Edit</a>
-         <a href="../detail-lowongan-kerja.php?id=<?php echo $data['id_loker'];?>" class="btn btn-success btn-sm""><i class="fa fa-eye"></i></a>
+      <td><a href="hapus-loker.php?id=<?php echo $data['id_loker'];?>" onclick="return confirm('Apakah Anda Ingin Menghapus Data Ini');" class="btn btn-danger btn-sm">Hapus</a>
+        <a href="edit-lowongan-kerja.php?id=<?php echo $data['id_loker'];?>" class="btn btn-primary btn-sm">Edit</a>
+         <a href="../detail-lowongan-kerja.php?id=<?php echo $data['id_loker'];?>" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a>
       </td>
     </tr>
   <?php endforeach; ?>

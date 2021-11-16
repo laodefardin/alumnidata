@@ -54,7 +54,7 @@
                 for($i = $start_number; $i <= $end_number; $i++){
                   $link_active = ($page1 == $i)? ' class="active"' : '';
                   ?>
-                  <li<?php echo $link_active; ?>><a href="lowongan-kerja.php?page1=<?php echo $i; ?>" style="background-color: #444444;border-color: #444444;"><?php echo $i; ?></a></li>
+                  <li<?php echo $link_active; ?>><a href="lowongan-kerja.php?page1=<?php echo $i; ?>" style="background-color: #294a70;border-color: #294a70;"><?php echo $i; ?></a></li>
                 <?php } ?>
 
                 <?php

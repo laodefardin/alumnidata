@@ -4,6 +4,7 @@ include 'global_header.php';
 ?>
 
 <div class="content-wrapper" style="min-height: 901px;">
+<div class="container ua-sigle-article no-padding">
 	<div class="img-paralax hidden-xs">
 		<div class="container">
 			<div class="paralax-title">
@@ -12,7 +13,7 @@ include 'global_header.php';
 		</div>
 	</div>
 
-	<div class="container ua-sigle-article no-padding">
+	
 		<section class="content">
 			<div class="">
 				<div class="box-header">

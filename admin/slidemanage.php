@@ -13,7 +13,7 @@ include 'global_header.php';
     <P></P>
     <div class="callout callout-warning" style="margin-bottom: 0!important;">
       <h4><i class="fa fa-warning"></i> Catatan:</h4>
-      Pastikan Ukuran gambar slide yang ingin diupload berukuran Width=10,16cm dan Height=3,18cm
+      Pastikan Ukuran gambar slide yang ingin diupload berukuran Width=56.44cm dan Height=17.64cm
     </div>
 
   </section>
@@ -55,7 +55,11 @@ include 'global_header.php';
             ?>
             <tr>
               <td><img src="../slide/<?php echo $data['gambar'];?>" width="300" height="100"></td>
-              <td><a href="manage-slidehapus.php?id=<?php echo $data['id_slide'];?>" onclick="return confirm('Apakah Anda Ingin Menghapus Data Ini');" class="btn btn-danger btn-sm"">Hapus</a></td>
+              <td><a href="manage-slidehapus.php?id=<?php echo $data['id_slide'];?>" onclick="return confirm('Apakah Anda Ingin Menghapus Data Ini');" class="btn btn-danger btn-sm">Hapus</a>
+
+              <a href="manage-slideedit.php?id=<?= $data['id_slide']; ?>" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-edit"></i> Edit</a>
+            </td>
             </tr>
           <?php } ?>
         </table>

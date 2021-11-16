@@ -6,7 +6,7 @@ session_start();
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SiAlumni JPTE Universitas Negeri Makassar</title>
+  <title>Portal Alumni Pascasarjana Universitas Negeri Makassar</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -76,13 +76,14 @@ session_start();
 
 </head>
 
-<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-<body class="hold-transition skin-yellow layout-top-nav">
-  <div class="wrapper">
 
+<body class="hold-transition skin-yellow layout-top-nav">
+  <div class="wrapper" style="background-color: #fff;">
+
+  <div class="container no-padding"> 
     <header class="main-header">
-      <nav class="navbar navbar-static-top" style="background-color: #444;">
-        <div class="container">
+      <nav class="navbar navbar-static-top" style="background-color: #294a70;">
+        
           <div class="navbar-header">
             <a href="index" class="navbar-brand">
               <img src="assets/logo1.png" style="
@@ -97,31 +98,33 @@ session_start();
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+            <div class="collapse navbar-collapse pull-right" id="navbar-collapse">
               <ul class="nav navbar-nav">
+              <li><a href="login">Login</a></li>
                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Alumni <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="alumni">Database Alumni</a></li>
-                  <li><a href="panduan-pendaftaran">Panduan</a></li>
+                  
                   <li><a href="registrasi-alumni">Pendaftaran Alumni</a></li>
-                  <li class="divider"></li>
                   <li><a href="pesan-kesan-alumni">Pesan Dan Kesan Alumni</a></li>
                 </ul>
               </li>
 
-              <li><a href="login">Login</a></li>
+              
               <li><a href="berita">Berita</a></li>
               <li><a href="lowongan-kerja">Lowongan Kerja</a></li>
-              <li><a href="galeri-alumni">Galeri</a></li>
-              <li><a href="kontak-dan-saran">Kontak & Saran</a></li>
-              <li><a href="tentang-jpte">Tentang JPTE UNM</a></li>
+              
+              <li><a href="kontak">Kontak</a></li>
+              <li><a href="tentang-pps">Tentang PPs UNM</a></li>
+              <li><a href="bantuan">Bantuan</a></li>
 
 
             </ul>
           </div>
-        </div>
+        
         <!-- /.container-fluid -->
       </nav>
     </header>
+    </div>
   <!-- Full Width Column -->

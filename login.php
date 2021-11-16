@@ -27,6 +27,7 @@
           if ($akun['level'] == "admin") { 
            $_SESSION['username'] = $akun["username"];
            $_SESSION['nm_lengkap'] = $akun["nm_lengkap"];
+           $_SESSION['data_id'] = $akun["id_user"];
            header("location: admin/index");
          }elseif  ($akun['level'] == "user") {
            $_SESSION['data_id'] = $akun["id_user"];
@@ -57,7 +58,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Aplikasi Data Alumni | Log in</title>
+  <title>Portal Alumni Pascasarjana Universitas Negeri Makassar | Log in</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -85,9 +86,9 @@
       <img class="mb-4" src="assets/logo-unm.png" alt="" width="150" height="150">
 
       <div class="login-logo">
-        <a href="index"><b></b>Aplikasi Data Alumni</a>
+        <a href="index"><b></b>Portal Alumni</a>
       </div>
-      <p>Jurusan Pendidikan Teknik Elektro Fakultas Teknik 
+      <p>Program Pascasarjana 
       Universitas Negeri Makassar</p>
       <b><p>Username : Nim Saat Mahasiswa</p></b>
     </div>
@@ -119,10 +120,10 @@
       <div class="row">
        <!-- /.col -->
        <div class="col-xs-12">
-        <button type="submit" name="aksi" id="aksi" value="login" class="btn btn-warning btn-block btn-flat">Login</button>
+        <button type="submit" name="aksi" id="aksi" value="login" class="btn btn-primary btn-block btn-flat">Login</button>
       </div>
 
-      <p class="text-muted text-center" style="margin-top:  50px;">© 2018-2019</p>
+      <p class="text-muted text-center" style="margin-top:  50px;">© 2021-2022</p>
       <!-- /.col -->
     </div>
   </form>

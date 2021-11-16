@@ -19,11 +19,11 @@ if (isset($_POST['tambah'])){
 	$lamaStudi1 = mysqli_real_escape_string($koneksi, trim($_POST['lamaStudi1']));
 	$lamaStudi2 = mysqli_real_escape_string($koneksi, trim($_POST['lamaStudi2']));
 
-	if (strlen($nim) > 10 || strlen($nim) < 8 ){
+	if (strlen($nim) > 12 || strlen($nim) < 8 ){
 		echo "<script>alert('Nim tidak boleh Kurang atau Lebih dari 10 Karakter');history.go(-1)</script>";
 	}else{
 		$sql2 = 'INSERT INTO alumni_profil (nama_lengkap, nim, jk, program_studi, ipk, th_masuk, th_keluar, lamaStudi1, lamaStudi2, update_status) values("'.$nama_lengkap.'","'.$nim.'","'.$jk.'","'.$program_studi.'","'.$ipk.'","'.$th_masuk.'","'.$th_keluar.'","'.$lamaStudi1.'","'.$lamaStudi2.'","'.$currentDate.'")';
-		$sql1 = 'INSERT INTO user values("","'.$nim.'","","'.$nama_lengkap.'","","","user","0")';
+		$sql1 = 'INSERT INTO user (username, password, nm_lengkap, email, level, active) values("'.$nim.'","","'.$nama_lengkap.'","","user","0")';
 
 		$cek_user = mysqli_num_rows(mysqli_query($koneksi, "SELECT username FROM user WHERE username='$_POST[nim]'"));
 		if($cek_user > 0) {

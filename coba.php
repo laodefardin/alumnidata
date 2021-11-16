@@ -50,11 +50,12 @@
 								<div class="col-lg-4">
 									<select class="form-control" id="rata2Gaji">
 										<option value=""> - Pilih Rata-Rata Dulu - </option>
-										<option value="> 50 Juta">&gt; 50 Juta</option>
-										<option value="25 Juta - 50 Juta">25 Juta - 50 Juta</option>
-										<option value="18 Juta - 25 Juta">18 Juta - 25 Juta</option>
-										<option value="<18 Juta">&lt;18 Juta</option>
-											<option value="Lainnya">Lainnya</option>
+										<option value="< Rp. 1.000.000 ">&gt; < Rp. 1.000.000 </option>
+										<option value="Rp. 1.000.000 - Rp. 5.000.000">Rp. 1.000.000 - Rp. 5.000.000</option>
+										<option value="Rp. 5.000.000 - Rp. 10.000.000">Rp. 5.000.000 - Rp. 10.000.000</option>
+										<option value="Rp. 10.000.000 - Rp. 15.000.000">&lt; Rp. 10.000.000 - Rp. 15.000.000</option>
+										<option value="Rp. 15.000.000 - Rp. 20.000.000">Rp. 15.000.000 - Rp. 20.000.000</option>
+										<option value="> Rp. 20.000.000"> > Rp. 20.000.000</option>
 										</select>
 									</div>
 									<span class="col-lg-2">Lama Bekerja di Perusahaan Sekarang</span>

@@ -9,7 +9,7 @@ include '../inc/koneksi.php';
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SiAlumni JPTE Universitas Negeri Makassar</title>
+  <title>Portal Alumni Pascasarjana Universitas Negeri Makassar</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -49,7 +49,7 @@ th input {
   width: 90%;
 }
 </style>
-<body class="hold-transition skin-yellow sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini">
   <div class="wrapper">
     <header class="main-header">
       <!-- Logo -->
@@ -57,7 +57,7 @@ th input {
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>Si</b>A</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>SiAlumni</b> JPTE UNM</span>
+        <span class="logo-lg"><b>Portal Alumni</b> PPs UNM</span>
       </a>
       <!-- Header Navbar: style can be found in header.less -->
       <nav class="navbar navbar-static-top">
@@ -73,7 +73,7 @@ th input {
               <ul class="dropdown-menu" role="menu">
                 <li><a href="ubah-password">Ubah Password</a></li>
                 <li class="divider"></li>
-                <li><a href="../logout.php">logout</a></li>
+                <li><a href="../logout">logout</a></li>
               </ul>
             </li>
           </ul>
@@ -129,10 +129,12 @@ th input {
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="manage-tentang-jpte"><i class="fa fa-circle-o"></i> <span>Tentang JPTE</span></a></li>
-              <li><a href="manage-dosen-jpte"><i class="fa fa-circle-o"></i> <span>Dosen JPTE</span></a></li>
-              <li><a href="galerymanage"><i class="fa fa-circle-o"></i> Manage Galery</a></li>
+              <!-- <li><a href="manage-tentang-pps"><i class="fa fa-circle-o"></i> <span>Tentang PPs</span></a></li>
+              <li><a href="manage-dosen-pps"><i class="fa fa-circle-o"></i> <span>Dosen PPs</span></a></li> -->
+              <!-- <li><a href="galerymanage"><i class="fa fa-circle-o"></i> Manage Galery</a></li> -->
               <li><a href="slidemanage"><i class="fa fa-circle-o"></i> Manage Slide</a></li>
+              <li><a href="artikelmanage"><i class="fa fa-pencil-square-o"></i> Artikel</a></li>
+              <li><a href="ubah-password"><i class="fa fa-circle-o"></i> Ubah Password</a></li>
             </ul>
           </li>
 
@@ -153,23 +155,6 @@ th input {
               <li><a href="statistik"><i class="fa fa-circle-o"></i> Statistik</a></li>
             </ul>
           </li>
-
-          <li><a href="artikelmanage"><i class="fa fa-pencil-square-o"></i> Artikel</a></li>
-          
-
-          <li class="active treeview">
-            <a href="#">
-              <i class="menu-icon fa fa-wrench"></i>
-              <span>Pengaturan </span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-
-             <li><a href="ubah-password"><i class="fa fa-circle-o"></i> Ubah Password</a></li>
-           </ul>
-         </li>
 
          
        </section>

@@ -27,7 +27,7 @@ include 'global_header.php';
     //mengatur session pesan menjadi kosong
     $_SESSION['pesan'] = '';
     ?>
-    <div class="box box-warning">
+    <div class="box box-primary">
       <div class="box-header">
         <div class="box-title"><h4>Manage Pesan dan Kesan Anda</h4></div>
         <br>
@@ -36,7 +36,7 @@ include 'global_header.php';
 
       <div class="box-body">
        <table id="example1" class="table table-bordered table-striped">
-       <thead class="bg-yellow">
+       <thead class="bg-blue">
          <th width="5%">No</th>
          <th width="15%">Penulis</th>
          <th width="15%">Pesan</th>

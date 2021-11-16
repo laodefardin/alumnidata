@@ -7,7 +7,7 @@ session_start();
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SiAlumni JPTE Universitas Negeri Makassar</title>
+  <title>Portal Alumni Pascasarjana Universitas Negeri Makassar</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -33,7 +33,7 @@ session_start();
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="hold-transition skin-yellow sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini">
   <div class="wrapper">
     <header class="main-header">
       <!-- Logo -->
@@ -41,7 +41,7 @@ session_start();
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>Si</b>A</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>SiAlumni</b> JPTE UNM</span>
+        <span class="logo-lg"><b>Portal Alumni</b> PPs UNM</span>
       </a>
       <!-- Header Navbar: style can be found in header.less -->
       <nav class="navbar navbar-static-top">
@@ -85,7 +85,7 @@ session_start();
 
           <?php
           $foto = $data["foto"];
-          if($foto===''){?>
+          if($foto==NULL){?>
             <img src="../foto/alumni/anonim.jpg" class="img-circle" alt="User Image">
           <?php } else {?>
             <img src="../foto/alumni/<?php echo $data['foto']; ?>" class="img-circle" alt="User Image">
@@ -136,7 +136,7 @@ session_start();
                   <li><a href="angkatan"><i class="fa fa-group"></i> List Data Alumni</a></li>
                   <li><a href="lowongan-kerja-manage"><i class="fa fa-circle-o"></i> Lowongan Kerja</a></li>
                   <li><a href="pesan-kesan-alumni"><i class="fa fa-send-o"></i> Pesan Dan Kesan</a></li>
-                  <li><a href="manage-dosen-jpte"><i class="fa fa-circle-o"></i> <span>Dosen JPTE</span></a></li>
+                  <!-- <li><a href="manage-dosen-jpte"><i class="fa fa-circle-o"></i> <span>Dosen JPTE</span></a></li> -->
                 </ul>
               </li>
               <li class="active treeview">

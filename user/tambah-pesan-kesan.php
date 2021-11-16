@@ -63,7 +63,7 @@ include 'global_header.php';
           $pesan = $_POST['pesan'];
           $kesan = $_POST['kesan'];
 
-          $query = 'INSERT INTO data_pesankesan VALUES("","'.$pesan.'","'.$kesan.'","'.$nama.'","'.$currentDate.'")';
+          $query = 'INSERT INTO data_pesankesan (pesan, kesan, penulis, tanggal) VALUES("'.$pesan.'","'.$kesan.'","'.$nama.'","'.$currentDate.'")';
           $proses = $koneksi->query($query) or die (mysqli_error());
 
           $_SESSION['pesan'] = 'Data Berhasil Ditambah';

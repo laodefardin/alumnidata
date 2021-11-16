@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-ErrorDocument 404 http://localhost/alumnidata/halaman-404
+ErrorDocument 404 https://alumnipascasarjanaunm.000webhostapp.com/halaman-404

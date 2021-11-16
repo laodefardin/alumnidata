@@ -7,7 +7,7 @@ include 'global_header.php';
 	<div class="img-paralax">
 		<div class="container">
 			<div class="paralax-title">
-				Galeri Alumni JPTE
+				Galeri Alumni Pascasarjana
 			</div>
 		</div>
 	</div>

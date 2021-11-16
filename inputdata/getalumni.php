@@ -11,7 +11,7 @@ if(isset($_GET['getAlumni'])){
 	$result = $koneksi->query($query);
 						if($result->num_rows == 0) { // Jika gagal menjalankan query
 							echo "<br><div class=\"callout callout-danger\">
-							<p>Nim yang anda masukkan tidak Terdaftar di dalam Database, Silahkan Hubungi Admin Aplikasi Data Alumni Jika Anda Adalah Alumni Jurusan Pendidikan Teknik Elektro FT UNM pada Nomor +6282 393 448 980 atau silahkan kirim email anda ke menu <a href='kontak-dan-saran'>Kontak dan Saran</a> jika anda adalah alumni</p>
+							<p>NIM yang anda masukkan belum terdaftar pada database alumni, silahkan hubungi admin Portal Alumni PPs UNM untuk info lebih lanjut.</p>
 							</div>";
 } else { // Jika berhasil
 	$no = 1;

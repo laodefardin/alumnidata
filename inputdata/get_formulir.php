@@ -4,7 +4,7 @@ session_start();
 ?>
 <div class="row">
 	<div class="col-lg-12">
-		<h4>Lengkapi Berkas Anda dan dapatkan User login untuk mendapatkan informasi terupdate tentang Alumni Universitas Negeri Makassar Fakultas Teknik Jurusan Pendidikan Teknik Elektro</h4>
+		<h4>Lengkapi Berkas Anda dan dapatkan User login untuk mendapatkan informasi terupdate tentang Alumni Pascasarjana Universitas Negeri Makassar</h4>
 		<p style="color:red">* Pastikan data yang Anda masukkan benar</p>
 	</div>
 
@@ -186,10 +186,10 @@ session_start();
 						</div>
 
 						<div class="row" style="margin-bottom: 15px;">
-							<span class="col-lg-2">Predikat Yudisiom</span>
+							<span class="col-lg-2">Predikat Yudisium</span>
 							<div class="col-lg-4">
 								<select class="form-control" id="predikatYudisium" name="predikatYudisium" style="width: 100%;">
-									<option  value="">Pilih Predikat Yudisiom</option>
+									<option  value="">Pilih Predikat Yudisium</option>
 									<option value="Cumlaude">Cumlaude</option>
 									<option value="Sangat Memuaskan">Sangat Memuaskan</option>
 									<option value="Memuaskan">Memuaskan</option>

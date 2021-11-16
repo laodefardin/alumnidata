@@ -1,2 +1,0 @@
-[28-Sep-2018 09:39:00 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laodef/public_html/sialumnijpteunm.ga/admin/manage-dosen-jpte.php:1) in /home/laodef/public_html/sialumnijpteunm.ga/admin/global_header.php on line 3
-[28-Sep-2018 09:39:47 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/laodef/public_html/sialumnijpteunm.ga/admin/manage-dosen-jpte.php:1) in /home/laodef/public_html/sialumnijpteunm.ga/admin/global_header.php on line 3

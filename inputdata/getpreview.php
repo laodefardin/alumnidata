@@ -4,7 +4,7 @@ session_start();
 ?>
 <div class="row">
 	<div class="col-lg-12" >
-		<h4>Lengkapi Berkas Anda dan dapatkan User login untuk mendapatkan informasi terupdate tentang Alumni Universitas Negeri Makassar Fakultas Teknik Jurusan Pendidikan Teknik Elektro</h4>
+		<h4>Lengkapi Berkas Anda dan dapatkan User login untuk mendapatkan informasi terupdate tentang Portal Alumni Pascasarjana Universitas Negeri Makassar</h4>
 		<p style="color:red">* Pastikan data yang Anda masukkan benar</p>
 	</div>
 	<?php
@@ -71,12 +71,12 @@ session_start();
 							: <?php echo $data['no_telp']; ?>
 						</td>
 					</tr>
-					<tr>
+					<!-- <tr>
 						<td><b>Jurusan</b></td>
 						<td>
-							: Pendidikan Teknik Elektro
+							: <?php echo $data['program_studi']; ?>
 						</td>
-					</tr>
+					</tr> -->
 					<tr>
 						<td><b>Program Studi</b></td>
 						<td>
@@ -94,7 +94,7 @@ session_start();
 		<div class="col-sm-2 col-md-2 col-lg-2 " align="center" style="margin-bottom: 25px"> 
 			<?php
 			$foto = $data["foto"];
-			if($foto===''){?>
+			if($foto == NULL){?>
 			<img style="height: 200px"  src="foto/anonim.png">
 			<?php } else {?>
 			<img style="height: 200px;width:100%"  src="foto/alumni/<?php echo $data['foto']; ?>"> 

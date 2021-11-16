@@ -4,15 +4,17 @@ include 'inc/koneksi.php';
 ?>
 
 <div class="content-wrapper">
-  <div class="top">
+  
+  <div class="container ua-sigle-article no-padding">
+    <div class="top">
     <div class="container">
       <h2 class="titletop">
         SISTEM INFORMASI DATA ALUMNI<br>
-        <span>Pendidikan Teknik Elektro Fakultas Teknik UNM </span>
+        <span>Program Pascasarjana UNM</span>
       </h2>
     </div>
   </div>
-  <div class="container ua-sigle-article no-padding">
+  
     <!-- Kode Slide awal -->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -58,21 +60,21 @@ include 'inc/koneksi.php';
   <!-- Main content -->
   <section class="content">
     <div class="row"> <!-- awal baris row -->
-      <div class="col-md-1"></div>
-      <div class="col-md-8 articles" id="site-content"> <!-- awal baris colom -->
+      <!-- <div class="col-md-1"></div> -->
+      <div class="col-md-9 articles" id="site-content"> <!-- awal baris colom -->
         <div class="box-content">
 
 
           <div class="box-info">
             <div class="box-header with-border2">
               <h3 class="box-title-info">
-                <span>Selamat datang di SiAlumni JPTE Fakultas Teknik Universitas Negeri Makassar</span></h3>
+                <span>Selamat datang di Portal Alumni Pascasarjana Universitas Negeri Makassar</span></h3>
               </div>
               <div class="box-body">
                 <ul>
-                  <li>Kepada alumni / calon wisudawan Jurusan Pendidikan Teknik Elektro Fakultas Teknik Universitas Negeri Makassar dimohon kesediannya untuk mengisi/meng-update biodata untuk panduan langkah - langkah <a href="panduan-pendaftaran" style="color: #fff;"><b>Registrasi Alumni Disini.</b></a></li>
+                  <li>Kepada alumni / calon wisudawan PPs UNM dimohon kesediaannya untuk mengisi dan melengkapi biodata</li>
                   <li>Jika Anda Alumni, NIM saat Mahasiswa Anda terdaftar di sistem sebagai Alumni </li>
-                  <li>Bila Nim Anda tidak terdaftar silahkan hubungi <a href="kontak-dan-saran" style="color: #fff;"><b>Admin disini.</b></a></li>
+                  <li>Bila Nim Anda tidak terdaftar silahkan hubungi <a href="kontak" style="color: #fff;"><b>Admin disini.</b></a></li>
                   <li>Alumni yang terdaftar wajib melengkapi berkas untuk mendapatkan username dan password</li>
                   <li>Silahkan CEK NIM saat Mahasiswa Anda, kemudian lengkapi berkas untuk login :</li>
                   
@@ -147,7 +149,7 @@ include 'inc/koneksi.php';
               for($i = $start_number; $i <= $end_number; $i++){
                 $link_active = ($page == $i)? ' class="active"' : '';
                 ?>
-                <li<?php echo $link_active; ?>><a href="berita.php?page=<?php echo $i; ?>" style="background-color: #444444;border-color: #444444;"><?php echo $i; ?></a></li>
+                <li<?php echo $link_active; ?>><a href="berita.php?page=<?php echo $i; ?>" style="background-color: #294a70; border-color: #294a70;"><?php echo $i; ?></a></li>
               <?php } ?>
 
               <?php
